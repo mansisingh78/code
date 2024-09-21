@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-// binary to decimal
+
+// Function to convert binary to decimal
 int binToDecimal(int binNum)
 {
     int ans = 0, pow = 1;
@@ -9,12 +10,12 @@ int binToDecimal(int binNum)
     {
         int rem = binNum % 10;
         ans += rem * pow;
-
         binNum /= 10;
-        pow += 2;
+        pow *= 2;
     }
     return ans;
 }
+
 int main()
 {
     cout << binToDecimal(1010) << endl;
