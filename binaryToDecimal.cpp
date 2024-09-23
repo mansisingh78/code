@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Function to convert binary to decimal
 int binToDecimal(int binNum)
 {
     int ans = 0, pow = 1;
